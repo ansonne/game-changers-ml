@@ -30,7 +30,7 @@ game_changers_ml/
 │ ├── features/ # Engenharia de features
 │ ├── models/ # Modelos de ML
 │ ├── domain/ # Entidades de domínio
-│ └── utils/ # Utilitários e configuração
+│ ├── utils/ # Utilitários e configuração
 │ └── services/ # Orquestração e serviços
 ├── tests/ # Testes unitários e de integração
 │   ├── test_data.py           # Testes de dados
