@@ -26,12 +26,13 @@ Sistema de Machine Learning para predição das colocações dos times no campeo
 ```bash
 game_changers_ml/
 ├── src/ # Código fonte
-│ ├── data/ # Coleta e processamento de dados
-│ ├── features/ # Engenharia de features
-│ ├── models/ # Modelos de ML
-│ ├── domain/ # Entidades de domínio
-│ ├── utils/ # Utilitários e configuração
-│ └── services/ # Orquestração e serviços
+│ ├── data/       # Coleta e processamento de dados
+│ ├── features/   # Engenharia de features
+│ ├── models/     # Modelos de ML
+│ ├── domain/     # Entidades de domínio
+│ ├── services/   # Orquestração e serviços
+│ ├── utils/      # Utilitários e configuração
+│ └── validation/ # Lógica de validação
 ├── tests/ # Testes unitários e de integração
 │   ├── test_data.py           # Testes de dados
 │   ├── test_features.py       # Testes de features
@@ -62,6 +63,13 @@ game_changers_ml/
 
 #### Domínio
 - **src/domain/entities.py**: Entidades do domínio (Team, Player, Match)
+- **src/domain/tournament.py**: Gerencia as configurações e o acesso aos dados dos torneios
+
+#### Serviços
+- **src/services/prediction_service.py**: Orquestra o fluxo de treinamento, predição e validação.
+
+#### Validação
+- **src/validation/validator.py**: Contém a lógica para validar a performance do modelo contra dados históricos.
 
 #### Utilitários
 - **src/utils/config.py**: Gerenciamento de configurações
