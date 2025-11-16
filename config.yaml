@@ -1,0 +1,74 @@
+api:
+  base_url: "https://vlr.orlandomm.net/api/v1"
+  rate_limit_delay: 1.0
+
+tournaments:
+  game_changers_2024_berlin:
+    name: "Game Changers 2024: Championship Berlin"
+    teams:
+      - id: "6456"
+        name: "FlyQuest RED"
+        actual_placement: 10
+      - id: "16468" 
+        name: "Ambitious Legend Gaming GC"
+        actual_placement: 9
+      - id: "8050"
+        name: "MIBR GC"
+        actual_placement: 2
+      - id: "15119"
+        name: "GIANTX GC"
+        actual_placement: 7
+      - id: "6530"
+        name: "G2 Gozen"
+        actual_placement: 3
+      - id: "9314"
+        name: "Team Falcons Vega"
+        actual_placement: 8
+      - id: "7511"
+        name: "KRÜ BLAZE"
+        actual_placement: 5
+      - id: "14278"
+        name: "Shopify Rebellion Gold"
+        actual_placement: 1
+      - id: "15317"
+        name: "Xipto Esports GC"
+        actual_placement: 4
+      - id: "12255"
+        name: "ZETA DIVISION GC"
+        actual_placement: 6
+
+  game_changers_2025_seoul:
+    name: "Game Changers 2025: Championship Seoul"
+    teams:
+      - id: "18418"
+        name: "Ninetails"
+      - id: "13807" 
+        name: "Nova Esports GC"
+      - id: "8050"
+        name: "MIBR GC"
+      - id: "15119"
+        name: "GIANTX GC"
+      - id: "6530"
+        name: "G2 Gozen"
+      - id: "7055"
+        name: "Team Liquid Brazil"
+      - id: "7511"
+        name: "KRÜ BLAZE"
+      - id: "14278"
+        name: "Shopify Rebellion Gold"
+      - id: "15317"
+        name: "Xipto Esports GC"
+      - id: "12255"
+        name: "Karmine Corp GC"
+
+features:
+  time_window_months: 6
+  roster_stability_weight: 0.15
+  individual_performance_weight: 0.35
+  team_performance_weight: 0.5
+
+model:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+  use_historical_data: true
